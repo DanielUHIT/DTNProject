@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DTN Text</string>
+    <string name="send">SEND</string>
+    <string name="uhtech">uhtech</string>
+    <string name="insertmessage">Insert Message</string>
+    <string name="send_via_bluetooth">Send via Bluetooth</string>
+</resources>
