@@ -13,20 +13,26 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:maxWidth="2000dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
         android:src="@drawable/uh_technology"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:contentDescription="@string/uhtech"
-        android:layout_above="@+id/textView2" />
+        android:id="@+id/imageView"
+        android:contentDescription="@string/uhtech2" />
 
     <Button
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="SEND"
-        android:onClick="sendViaBluetooth"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_width="fill_parent"
+        android:text="@string/search"
+        android:id="@+id/search_button"
+        android:layout_alignTop="@+id/listen_button"
+        android:layout_toStartOf="@+id/messageview"
+        android:layout_toLeftOf="@+id/messageview" />
 
     <TextView
         android:layout_width="fill_parent"
@@ -38,14 +44,15 @@
         android:background="#ff0000"
         android:gravity="center_horizontal"
         android:textColor="#ffffff"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/msntxt"
+        android:id="@+id/messagetext"
         android:editable="true"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
@@ -55,9 +62,27 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtre"
-        android:layout_below="@+id/msntxt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+        android:id="@+id/messageview"
+        android:text="@string/messageview"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/listen"
+        android:id="@+id/listen_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/messageview"
+        android:layout_toEndOf="@+id/messageview" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/List_discovered"
+        android:layout_below="@+id/messageview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/search_button" />
 
 </RelativeLayout>

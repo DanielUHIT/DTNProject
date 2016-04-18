@@ -4,4 +4,8 @@
     <string name="uhtech">uhtech</string>
     <string name="insertmessage">Insert Message</string>
     <string name="send_via_bluetooth">Send via Bluetooth</string>
+    <string name="search">SEARCH</string>
+    <string name="listen">LISTEN</string>
+    <string name="uhtech2">uhtech</string>
+    <string name="messageview">MESSAGE</string>
 </resources>
